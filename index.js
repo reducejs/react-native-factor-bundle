@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 require('react-native/packager/babelRegisterOnly')([
   /private-cli\/src/,
