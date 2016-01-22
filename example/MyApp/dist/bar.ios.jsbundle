@@ -1,0 +1,22 @@
+__d('awesome/page/bar/index.ios.js',function(global, require, module, exports) {  var React=require('react-native/Libraries/react-native/react-native.js');var 
+
+ScrollView=React.ScrollView;var TouchableHighlight=React.TouchableHighlight;var Text=React.Text;
+
+require('awesome/lib/sayHi.js');
+
+var Bar=React.createClass({displayName:'Bar',
+render:function(){
+return (
+React.createElement(ScrollView,null,
+React.createElement(TouchableHighlight,{onPress:function(){return console.log('pressed');}},
+React.createElement(Text,null,'Proper Touch Handling'))));}});
+
+
+
+
+
+
+React.AppRegistry.registerComponent('bar',function(){return Bar;});
+});
+;require("awesome/page/bar/index.ios.js");
+__SSTOKENSTRING = "@generated SignedSource<<a5ac807864d2342ab6bd5ae2e1eb1b42>>";

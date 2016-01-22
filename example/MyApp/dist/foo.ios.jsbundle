@@ -1,0 +1,22 @@
+__d('awesome/page/foo/index.ios.js',function(global, require, module, exports) {  var React=require('react-native/Libraries/react-native/react-native.js');var 
+
+TabBarIOS=React.TabBarIOS;var NavigatorIOS=React.NavigatorIOS;
+
+require('awesome/lib/sayHi.js');
+
+var Foo=React.createClass({displayName:'Foo',
+render:function(){
+return (
+React.createElement(TabBarIOS,null,
+React.createElement(TabBarIOS.Item,{title:'React Native',selected:true},
+React.createElement(NavigatorIOS,{initialRoute:{title:'React Native'}}))));}});
+
+
+
+
+
+
+React.AppRegistry.registerComponent('foo',function(){return Foo;});
+});
+;require("awesome/page/foo/index.ios.js");
+__SSTOKENSTRING = "@generated SignedSource<<8958bda140758263bb5ab4dde164c41e>>";

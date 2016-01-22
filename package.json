@@ -1,0 +1,38 @@
+{
+  "name": "react-native-factor-bundle",
+  "version": "0.0.1",
+  "description": "Factor react-native packager bundles into common shared bundles",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react-native": "^0.18.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "eslint": "^1.10.1",
+    "tap": "^5.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && tap --cov test/*.js",
+    "lint": "eslint *.js 'lib/**/*.js' test/*.js bin/*.js",
+    "coveralls": "COVERALLS_REPO_TOKEN=REPO_TOKEN npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoubin/react-native-factor-bundle.git"
+  },
+  "keywords": [
+    "react-native",
+    "packager"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoubin/react-native-factor-bundle/issues"
+  },
+  "homepage": "https://github.com/zoubin/react-native-factor-bundle#readme"
+}
